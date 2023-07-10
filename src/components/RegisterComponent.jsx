@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { RegisterAPI } from "../api/AuthAPI";
 import { postUserData } from "../api/FirestoreAPI";
-import LinkedinLogo from "../assets/linkedinLogo.png";
+import Logo from "../assets/Logo.png";
 import { useNavigate } from "react-router-dom";
 import { getUniqueID } from "../helpers/getUniqueId";
 import "../Sass/LoginComponent.scss";
@@ -31,10 +31,10 @@ export default function RegisterComponent() {
 
   return (
     <div className="login-wrapper">
-      <img src={LinkedinLogo} className="linkedinLogo" />
+      <img src={Logo} className="linkedinLogo" />
 
       <div className="login-wrapper-inner">
-        <h1 className="heading">Make the most of your professional life</h1>
+        <h1 className="heading">Listo para ser parte de Cherry</h1>
 
         <div className="auth-inputs">
           <input
@@ -63,13 +63,13 @@ export default function RegisterComponent() {
           />
         </div>
         <button onClick={register} className="login-btn">
-          Agree & Join
+          Registrarse
         </button>
       </div>
       <hr class="hr-text" data-content="or" />
       <div className="google-btn-container">
         <p className="go-to-signup">
-          Already on LinkedIn?{" "}
+          Already on Cherry?{" "}
           <span className="join-now" onClick={() => navigate("/")}>
             Sign in
           </span>

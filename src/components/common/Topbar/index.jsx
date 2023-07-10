@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import LinkedinLogo from "../../../assets/linkedinLogo.png";
+import LinkedinLogo from "../../../assets/Logo.png";
 import user from "../../../assets/user.png";
 import SearchUsers from "../SearchUsers";
 import {
