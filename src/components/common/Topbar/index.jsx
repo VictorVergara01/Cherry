@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
-import LinkedinLogo from "../../../assets/Logo.png";
-import user from "../../../assets/user.png";
+import Logo from "../../../assets/Logo.png";
 import SearchUsers from "../SearchUsers";
 import {
   AiOutlineHome,
@@ -75,7 +74,7 @@ export default function Topbar({ currentUser }) {
         <></>
       )}
 
-      <img className="linkedin-logo" src={LinkedinLogo} alt="LinkedinLogo" />
+      <img className="linkedin-logo" src={Logo} alt="" />
       {isSearch ? (
         <SearchUsers
           setIsSearch={setIsSearch}
@@ -99,7 +98,6 @@ export default function Topbar({ currentUser }) {
             onClick={() => goToRoute("/connections")}
           />
           <BsBriefcase size={30} className="react-icon" />
-          <AiOutlineMessage size={30} className="react-icon" />
           <AiOutlineBell size={30} className="react-icon" />
         </div>
       )}
