@@ -14,17 +14,18 @@ export default function ConnectionsComponent({ currentUser }) {
 
   return users.length > 1 ? (
     <div className="connections-main">
-      {users.map((user) => {
-        return user.id === currentUser.id ? (
-          <></>
+      {users.map((user) =>
+        user.id === currentUser.id ? (
+          <React.Fragment key={user.id}></React.Fragment>
         ) : (
           <ConnectedUsers
+            key={user.id} // Agrega la prop 'key' con un valor único
             currentUser={currentUser}
             user={user}
             getCurrentUser={getCurrentUser}
           />
-        );
-      })}
+        )
+      )}
     </div>
   ) : (
     <div className="connections-main">No Connections to Add!</div>
