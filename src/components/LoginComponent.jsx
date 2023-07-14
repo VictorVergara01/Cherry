@@ -35,7 +35,7 @@ export default function LoginComponent() {
             }
             type="email"
             className="common-input"
-            placeholder="Email or Phone"
+            placeholder="agape@mail.com"
           />
           <input
             onChange={(event) =>
@@ -43,7 +43,7 @@ export default function LoginComponent() {
             }
             type="password"
             className="common-input"
-            placeholder="Password"
+            placeholder="1234567"
           />
         </div>
         <button onClick={login} className="login-btn">
@@ -53,10 +53,10 @@ export default function LoginComponent() {
       <hr className="hr-text" data-content="or" />
       <div className="google-btn-container">
         <p className="go-to-signup">
-          New to Cherry?{" "}
-          <span className="join-now" onClick={() => navigate("/register")}>
+          Nuevo en Ágape?{" "}
+          {/* <span className="join-now" onClick={() => navigate("/register")}>
             Join now
-          </span>
+          </span> */}
         </p>
       </div>
     </div>
